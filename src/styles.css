@@ -1,0 +1,221 @@
+/* General Styles */
+
+@font-face {
+  font-family: "Dosis";
+  src: url("./media/fonts/Dosis/Dosis-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("./media/fonts/Lato/Lato-Regular.ttf") format("truetype");
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Dosis";
+}
+
+p {
+  font-family: "Lato";
+}
+
+a {
+  text-decoration: none;
+}
+
+:focus {
+  outline: none;
+}
+
+body {
+  background-color: var(--color-white-pointer);
+}
+
+:root {
+  --color-finn: #572842;
+  --color-melon: #fcb9b2;
+  --color-mortar: #5d4e60;
+  --color-old-rose: #c98686;
+  --color-romantic: #fed0bb;
+  --color-white-pointer: #fef9ff;
+}
+
+/* Home Styles */
+
+.home {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  height: 550px;
+  background-color: var(--color-finn);
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.heading {
+  padding-top: 12%;
+}
+
+.heading-main {
+  font-family: "Dosis";
+  font-size: 70px;
+  color: var(--color-romantic);
+  margin-bottom: 0px;
+}
+
+.subtitle-main {
+  font-size: 15px;
+  color: var(--color-romantic);
+}
+
+.about {
+  background-repeat: no-repeat;
+  background-image: url('./media/graphics/circle-bkg.png');
+}
+
+.heading-about {
+  font-size: 50px;
+  color: var(--color-finn);
+  margin-left: 100px;
+}
+
+.paragraph-about {
+  margin: 20px;
+  margin-left: 400px;
+  color: var(--color-old-rose);
+}
+
+.spotlight-action {
+  border: none;
+  background-color: var(--color-finn);
+  color: var(--color-old-rose);
+  border-radius: 50px;
+  padding: 10px;
+  margin-left: 300px;
+}
+
+.spotlight-action:hover, spotlight-action:focus, spotlight-action:active {
+  border: 1px solid var(--color-old-rose);
+  background-color: var(--color-white-pointer);
+}
+
+.footer {
+  margin-top: 100px;
+  margin-bottom: 0px;
+  border: 10px solid var(--color-mortar);
+}
+
+/* Flashlight Overlay */
+
+/* :root {
+  cursor: none;
+  --cursorX: 50vw;
+  --cursorY: 50vh;
+} */
+
+/* :root:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  pointer-events: none;
+  background: radial-gradient(circle 10vmax at var(--cursorX) var(--cursorY),
+  rgba(0, 0, 0, 0) 0%,
+  rgba(0, 0, 0, 0.5) 88%,
+  rgba(0, 0, 0, 0.95) 100%,
+  )
+} */
+
+/* Checker Styles */
+
+.checker {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image: url('./media/graphics/circle-bkg.png');
+}
+
+.heading-checker {
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.heading-main-checker {
+  font-family: "Dosis";
+  margin-bottom: 0px;
+  font-size: 70px;
+  color: var(--color-finn);
+}
+
+.subtitle-main-checker {
+  color: var(--color-finn);
+}
+
+.subtitle-pick-format {
+  color: var(--color-finn);
+}
+
+.format-options-checker {
+  margin-left: 520px;
+  margin-right: 520px;
+  margin-bottom: 20px;
+  background-color: var(--color-finn);
+  border-radius: 50px;
+}
+
+.format-toggle-checker-left {
+  border: none;
+  background-color: transparent;
+  color: var(--color-old-rose);
+  border-right: 1px solid var(--color-old-rose);
+}
+
+.format-toggle-checker {
+  border: none;
+  background-color: transparent;
+  color: var(--color-old-rose);
+}
+
+.format-toggle-checker-right {
+  border: none;
+  background-color: transparent;
+  color: var(--color-old-rose);
+  border-left: 1px solid var(--color-old-rose);
+}
+
+.form-checker {
+  margin-left: 500px;
+}
+
+.form-input-textarea-checker {
+  margin-right: 20px;
+  width: 700px;
+  height: 350px;
+  border: 1px solid var(--color-old-rose);
+}
+
+.form-input-textarea-checker:hover, form-input-textarea-checker:focus, form-input-textarea-checker:active {
+  border: 2px solid var(--color-old-rose);
+}
+
+.form-submit-checker {
+  float: right;
+  border: none;
+  background-color: var(--color-finn);
+  color: var(--color-old-rose);
+  border-radius: 50px;
+  padding: 7px;
+  margin-top: 20px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+
+.form-submit-checker:hover, form-submit-checker:focus, form-submit-checker:active {
+  border: 1px solid var(--color-old-rose);
+  background-color: var(--color-white-pointer);
+}
