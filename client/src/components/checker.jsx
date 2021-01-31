@@ -29,7 +29,20 @@ class Checker extends React.Component {
 
       fetch("http://127.0.0.1:5000/", requestOptions)
         .then(response => response.text())
-        .then(result => console.log(result))
+        .then(result => {
+          if (result == 0) {
+            alert("Your script does not pass the bechdel test: 0/3 requirements cleared. Your script must have: \n1) women\n2) who talk to each other\n3) about something besides a man")
+          }
+          else if (result == 1) {
+            alert("Your script does not pass the bechdel test: 1/3 requirements cleared. Your script must have:\n2) women who talk to each other\n3) about something besides a man")
+          }
+          else if (result == 2) {
+            alert("Your script does not pass the bechdel test: 2/3 requirements cleared. Your script must have:\n3) women who talk about something besides a man")
+          }
+          else if (result == 3) {
+            alert("Your script passed the bechdel test!")
+          }
+        })
         .catch(error => console.log('error: ', error));
     }
 

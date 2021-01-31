@@ -19,7 +19,7 @@ class Home extends React.Component {
       src={require("../media/graphics/logo-romantic.png").default}
       alt="" />
       <span className="heading-main">Spotlight</span>
-      <p className="subtitle-main">Bringing Gender Injustices into the Spotlight</p>
+      <p className="subtitle-main">Bringing gender injustices into the spotlight</p>
       </div>
       </center>
       </div>
