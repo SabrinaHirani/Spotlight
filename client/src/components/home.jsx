@@ -4,14 +4,29 @@ import "../styles.css";
 class Home extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      x: 0,
+      y: 0
+    }
 
+    this.moveTorch = this.moveTorch.bind(this);
+    }
+
+    moveTorch = e => {
+      this.setState({
+        x: e.clientX,
+        y: e.clientY
+      });
+      var torch = document.getElementById("torch");
+      torch.style.top = this.state.y + 'px';
+      torch.style.left = this.state.x + 'px';
     }
 
   render() {
     return (
       <div className="home">
-      <div id="light"></div>
-      <div className="header">
+      <div className="header" onMouseMove={this.moveTorch}>
+          <div id="torch"></div>
       <center>
       <div className="heading">
       <img
