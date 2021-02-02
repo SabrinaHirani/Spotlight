@@ -46,19 +46,6 @@ class Checker extends React.Component {
         .catch(error => console.log('error: ', error));
     }
 
-    // handleSubmit() {
-    //   fetch('http://127.0.0.1:5000/', {
-    //     method: 'POST',
-    //     headers: {
-    // 'Content-Type': 'application/json',
-    //   },
-    //     body: document.getElementById("textarea-input-checker").value
-    //   }).then((response) => {
-    //     alert('done')
-    //     console.log(response);
-    //   })
-    // }
-
   render() {
     if (this.state.ff == 0) {
       return (
